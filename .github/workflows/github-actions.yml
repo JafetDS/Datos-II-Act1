@@ -18,4 +18,7 @@ jobs:
         mkdir build
     - name: Build
       shell: bash
-      run: cd build
+      run: |
+        cd build
+        cmake ..
+        make
